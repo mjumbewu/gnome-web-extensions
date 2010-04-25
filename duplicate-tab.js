@@ -65,8 +65,8 @@ function create_duplicate_action()
   */
   
   var action = new Gtk.Action({
-    name: "FileDuplicateTab",
-    label: "_Duplicate Tab",
+    name: "TabsDuplicate",
+    label: "D_uplicate Tab",
     tooltip: "Duplicate the current tab",
     stock_id: null});
   return action;
@@ -79,7 +79,7 @@ function create_duplicate_action_group(action)
   */
   
   var action_group = new Gtk.ActionGroup({
-    name: "FileDuplicateTabActionGroup"});
+    name: "TabsDuplicateActionGroup"});
   action_group.add_action_with_accel(action, "<shift><control>D");
   return action_group;
 }
@@ -102,8 +102,8 @@ function add_duplicate_action_group_to_menu(manager, action_group)
   */
   manager.insert_action_group(action_group, 0);
   merge_id = manager.new_merge_id();
-  manager.add_ui(merge_id, "/menubar/FileMenu/FileNewWindowMenu",
-    "FileDuplicateTabMenu", "FileDuplicateTab",
+  manager.add_ui(merge_id, "/menubar/TabsMenu/TabsDetach",
+    "TabsDuplicateMenuItem", "TabsDuplicate",
     Gtk.UIManagerItemType.MENUITEM, true);
   return merge_id;
 }
