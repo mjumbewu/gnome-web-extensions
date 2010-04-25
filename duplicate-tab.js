@@ -103,7 +103,10 @@ function add_duplicate_action_group_to_menu(manager, action_group)
   manager.insert_action_group(action_group, 0);
   merge_id = manager.new_merge_id();
   manager.add_ui(merge_id, "/menubar/TabsMenu/TabsDetach",
-    "TabsDuplicateMenuItem", "TabsDuplicate",
+    "TabsDuplicateMenu", "TabsDuplicate",
+    Gtk.UIManagerItemType.MENUITEM, true);
+  manager.add_ui(merge_id, "/EphyNotebookPopup/TabCloseENP",
+    "TabsDuplicateENP", "TabsDuplicate",
     Gtk.UIManagerItemType.MENUITEM, true);
   return merge_id;
 }
