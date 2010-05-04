@@ -2,7 +2,7 @@
 Name=Duplicate a tab
 Description=Open a new tab that has the same history as another, for when you realize you should have opened a link in a new tab, but didn't.
 Authors=Mjumbe Wawatu Ukweli
-Version=1.0.0
+Version=1.1.0
 URL=
 
 [Loader]
