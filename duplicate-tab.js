@@ -1,5 +1,5 @@
 /*
- * Duplicate tab v1.0.0
+ * Duplicate tab v1.1.0
  * Create a new tab with the url and history of the current one.
  * 
  * This extension was created in an effort to alleviate the burden of foresight
